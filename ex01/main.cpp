@@ -1,8 +1,9 @@
 #include "iter.hpp"
 
-static void	sum_to_iteration(const int& x)
+template <typename T>
+static void	sum_to_iteration(const T& x)
 {
-	std::cout << x + 1 << std::endl;
+	std::cout << x << std::endl;
 }
 
 int	main(void)

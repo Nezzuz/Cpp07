@@ -3,7 +3,7 @@
 #include <iostream>
 
 template <typename T>
-void	iter(T* address, T length, void(*function)(const T&))
+void	iter(T* address, int length, void(*function)(const T&))
 {
 	int	i;
 

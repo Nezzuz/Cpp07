@@ -15,28 +15,18 @@ void swap(T& a, T& b)
 template <typename T>
 T min(T x, T y)
 {
-	if (x < y)
+	if (x <= y)
 		return (x);
-	else if (y < x)
-		return (y);
 	else
-	{
-		std::cout << "They're equal" << std::endl;
-		return (0);
-	}
+		return (y);
 }
 
 template <typename T>
 T max(T x, T y)
 {
-	if (x > y)
+	if (x >= y)
 		return (x);
-	else if (y > x)
-		return (y);
 	else
-	{
-		std::cout << "They're equal" << std::endl;
-		return (0);
-	}
+		return (y);
 }
 

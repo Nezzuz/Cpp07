@@ -8,7 +8,7 @@ static void	sum_to_iteration(const T& x)
 
 int	main(void)
 {
-	int	array[] = {1, 2, 3};
+	char	array[] = {'a', 'b', 'c'};
 
 	iter(array, 3, sum_to_iteration);
 	return (0);

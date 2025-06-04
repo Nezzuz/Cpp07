@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <cstdlib>  // Para rand() y srand()
+#include <ctime>    // Para time()
 
 template <typename T>
 class Array
@@ -44,10 +46,10 @@ Array<T>	&Array<T>::operator=(const Array<T> &model)
 {
 	unsigned int	i;
 
-	if (this == model)
+	if (this == &model)
 		return (*this);
 	delete[] this->array;
-	this->len = model->len;
+	this->len = model.len;
 	this->array = new T[this->len];
 	i = 0;
 	while (i < this->len)
@@ -55,6 +57,7 @@ Array<T>	&Array<T>::operator=(const Array<T> &model)
 		this->array[i] = model.array[i];
 		i++;
 	}
+	return (*this);
 }
 
 template <typename T>

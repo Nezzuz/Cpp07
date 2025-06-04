@@ -20,7 +20,10 @@ T min(T x, T y)
 	else if (y < x)
 		return (y);
 	else
-		return (std::cout << "They're equal" << std::endl, 0);
+	{
+		std::cout << "They're equal" << std::endl;
+		return (0);
+	}
 }
 
 template <typename T>
@@ -31,6 +34,9 @@ T max(T x, T y)
 	else if (y > x)
 		return (y);
 	else
-		return (std::cout << "They're equal" << std::endl, 0);
+	{
+		std::cout << "They're equal" << std::endl;
+		return (0);
+	}
 }
 
